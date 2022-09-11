@@ -1,0 +1,261 @@
+<!DOCTYPE  html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>blog</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/Bootstrap_Arabic_Template_Style.css">
+	</head>
+    <body>
+        <!-- ***********************************************  navbar section ************************************* -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!--  يكون فيه مسافة من البداية navbar عشان ال -->
+            <div class="container">
+                <!-- ////////// navbar logo ////////// --> 
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="not found logo">
+                </a>
+                <!-- ///////////////////// menubar button ///////////////////// -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- **************** menubar icon **************** -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+               <!-- /////////////////////////// navbar links /////////////////////////// -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">الصفحة الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="blog-details.html">معلومات عامة</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <!-- dropdown link -->
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                        صفحات
+                      </a>
+                      <!-- dropdown menu links -->
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">صفحة اولي</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">صفحة ثانية</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">صفحة ثالثة</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">مدونة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">أتصل بنا</a>
+                    </li>
+
+                  </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- //////////////////////////////// jumbotron //////////////////////////////// -->
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <h2>المدونة</h2>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <nav aria-label="breadcrumb">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">الصفحة الرئيسية</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"> المدونة </li>
+                          </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //////////////////////////////// blog section //////////////////////////////// -->
+        <section class="section blog">
+            <div class="container">
+                <div class="row">
+                   <!-- ############################# row 1 : blog 1 ############################ -->
+                   <!-- /////////////////// right column /////////////////// --> 
+                    <div class="col-lg-9 col-12">
+                        <h5 class="blogH5">مرحبا بكم في مدوناتنا , كن علي دراية بأخر الاخبار الصناعية </h5>
+                        <div class="jumbotron py-4">
+                            <!-- right part -->
+                            <div class="blog-desc">
+                                <h4> عنوان المدونة يذهب الي هنا عنوان المدونة يذهب </h4>
+                                <span> <i class="fa fa-calendar"></i> 24 مايو 2020 </span>
+                                <p>
+                                    هناك حقيقة مثبته منذ زمن طويل وهي ان المحتوي المقروء لصفحة ما سبيلها القارئ من التركيز علي الشكل الخارجي للنص او شكل توضع الفقرات في الصفحة التي يقرأها . ولذلك يتم استخدام طريقة للحصول من هنا .
+                                </p>
+                                <a  class="btn btn-warning" href="blog-details.html">اقرأ المزيد من هنا</a>
+                            </div>
+                            <!-- left part -->
+                            <div class="blog-img">
+                                <img src="images/blog-bg-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /////////////////// left column /////////////////// --> 
+                    <div class="col-lg-3 col-12">
+                        <div class="search">
+                            <div class="input-group mb-3">
+                                <!-- search : inputField -->
+                                <input type="text" class="form-control" placeholder="ابحث هنا ......" aria-label="Username" aria-describedby="addon-wrapping">
+                                <!-- search : button -->
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> 
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ------------------------------ الوثوف هناااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااا -------------------- -->
+                        <!-- /////////////////// left column /////////////////// --> 
+                        <div>
+                            <h3 class="border mb-0 mt-5 p-3"> المشاركات الاخيرة </h3> 
+                            <ul class="list-unstyled  border pd-3">
+                                <!-- item1 -->
+                                <li class="p-3"> 
+                                    <span class="d-block"> <i class="fa fa-caret-left"></i> لعنوان المدونة يذهب الي هنا </span>
+                                    <span class="d-block text-info">24 مايو 2017</span>
+                                </li>
+                                <!-- item2 -->
+                                <li class="p-3"> 
+                                    <span class="d-block"> <i class="fa fa-caret-left"></i> لعنوان المدونة يذهب الي هنا </span>
+                                    <span class="d-block text-info">24 مايو 2017</span>
+                                </li>
+                                <!-- item3 -->
+                                <li class="p-3"> 
+                                    <span class="d-block"> <i class="fa fa-caret-left"></i> لعنوان المدونة يذهب الي هنا </span>
+                                    <span class="d-block text-info">24 مايو 2017</span>
+                                </li>
+                                <!-- item4 -->
+                                <li class="p-3"> 
+                                    <span class="d-block"> <i class="fa fa-caret-left"></i> لعنوان المدونة يذهب الي هنا </span>
+                                    <span class="d-block text-info">24 مايو 2017</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- #############################  row 2 : blog 2 ############################# -->
+                    <!-- /////////////////// right part /////////////////// -->
+                    <div class="col-lg-9 col-12">
+                        <div class="jumbotron py-4">
+                            <div class="blog-img">
+                                <img src="images/blog-bg-3.jpg" alt="">
+                            </div>
+                            <div class="blog-desc">
+                                <h4> عنوان المدونة يذهب الي هنا عنوان المدونة يذهب </h4>
+                                <span> <i class="fa fa-calendar"></i> 24 مايو 2020 </span>
+                                <p>
+                                    هناك حقيقة مثبته منذ زمن طويل وهي ان المحتوي المقروء لصفحة ما سبيلها القارئ من التركيز علي الشكل الخارجي للنص او شكل توضع الفقرات في الصفحة التي يقرأها . ولذلك يتم استخدام طريقة للحصول من هنا .
+                                </p>
+                                <a  class="btn btn-warning" href="blog-details.html">اقرأ المزيد من هنا</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- #############################  row 3 : blog 3 ############################# -->
+                    <!-- /////////////////// right part /////////////////// -->
+                    <div class="col-lg-9 col-12">
+                        <div class="jumbotron py-4">
+                            <!-- right part -->
+                            <div class="blog-desc">
+                                <h4> عنوان المدونة يذهب الي هنا عنوان المدونة يذهب </h4>
+                                <span> <i class="fa fa-calendar"></i> 24 مايو 2020 </span>
+                                <p>
+                                    هناك حقيقة مثبته منذ زمن طويل وهي ان المحتوي المقروء لصفحة ما سبيلها القارئ من التركيز علي الشكل الخارجي للنص او شكل توضع الفقرات في الصفحة التي يقرأها . ولذلك يتم استخدام طريقة للحصول من هنا .
+                                </p>
+                                <a  class="btn btn-warning" href="blog-details.html">اقرأ المزيد من هنا</a>
+                            </div>
+                            <div class="blog-img">
+                                <img src="images/choose-us-img-2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /////////////////// left part /////////////////// -->
+                    <div class="col-lg-3 col-12">
+                    
+                    </div>
+                    <!-- #############################  row 4 : blog 4 ############################# -->
+                    <!-- /////////////////// right part /////////////////// -->
+                    <div class="col-lg-9 col-12">
+                        <div class="jumbotron py-4">
+                            <!-- right part -->
+                            <div class="blog-img">
+                                <img src="images/blog2.jpg" alt="">
+                            </div>
+                            <!-- left part -->                            
+                            <div class="blog-desc">
+                                <h4> عنوان المدونة يذهب الي هنا عنوان المدونة يذهب </h4>
+                                <span> <i class="fa fa-calendar"></i> 24 مايو 2020 </span>
+                                <p>
+                                    هناك حقيقة مثبته منذ زمن طويل وهي ان المحتوي المقروء لصفحة ما سبيلها القارئ من التركيز علي الشكل الخارجي للنص او شكل توضع الفقرات في الصفحة التي يقرأها . ولذلك يتم استخدام طريقة للحصول من هنا .
+                                </p>
+                                <a  class="btn btn-warning" href="blog-details.html">اقرأ المزيد من هنا</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- /////////////////// left part /////////////////// -->
+                    <div class="col-lg-3 col-12">
+                    
+                    </div>
+                    <!-- #############################  row 5 : blog 5 ############################# -->
+                    <!-- /////////////////// right part /////////////////// -->
+                    <div class="col-lg-9 col-12">
+                        <div class="jumbotron py-4">
+                            <div class="blog-desc">
+                                <h4> عنوان المدونة يذهب الي هنا عنوان المدونة يذهب </h4>
+                                <span> <i class="fa fa-calendar"></i> 24 مايو 2020 </span>
+                                <p>
+                                    هناك حقيقة مثبته منذ زمن طويل وهي ان المحتوي المقروء لصفحة ما سبيلها القارئ من التركيز علي الشكل الخارجي للنص او شكل توضع الفقرات في الصفحة التي يقرأها . ولذلك يتم استخدام طريقة للحصول من هنا .
+                                </p>
+                                <a  class="btn btn-warning" href="blog-details.html">اقرأ المزيد من هنا</a>
+                            </div>
+                            <!-- left part -->
+                            <div class="blog-img">
+                                <img src="images/blog3.jpg" alt="">
+                            </div>
+                        </div>
+                     <!-- #############################  row 5 : blog 5 : pagination ############################# -->
+                        <nav aria-label="Page navigation example">
+                              <ul class="pagination">
+                                    <li class="page-item">
+                                      <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                      </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                    <li class="page-item">
+                                      <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                      </a>
+                                    </li>
+                              </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script src="js/jquery.min.js"></script>
+	    <script src="js/bootstrap.js"></script>
+        <script src="js/runHill_js.js"></script>
+    </body>
+</html>
+

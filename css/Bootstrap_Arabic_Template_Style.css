@@ -1,0 +1,794 @@
+*   , *:before , *:after
+{
+    margin: 0 ;
+    padding: 0 ;
+}
+body
+{
+    direction: rtl ;
+    text-align: right ;
+}
+/* **************************************  navbar ******************************************** */
+.navbar  
+{
+    background-color: #fff ; 
+    box-shadow: 1px 2px 5px #ebebeb ;
+}
+/* ******************* Header navbar ************************* */
+.navbar  .container .navbar-brand  img
+{
+    width: 50px ;
+    height: 50px ;
+}
+/*
+     ######################################################
+                         Global style
+     ######################################################
+*/
+section
+{
+    padding: 80px  0 ;
+}
+.section_title
+{
+    position: relative;
+}
+nav
+{
+    /* عشان يظهره في الطبقة الاولي */
+    z-index: 999 ;
+}
+.section_title
+{
+    margin-top: 10px ;
+}
+/* --------------- line under header --------------- */
+.section_title::after
+{
+    content:"";
+    display: block ;
+    width: 35% ;
+    height: 3px ;
+    background-color: #ffc527;
+    margin-top: 15px ;
+}
+.home
+{
+    height: 600px ;
+    background-image: url("../images/slide-bg-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center ;
+   /* border: 2px solid #0f0 ;  */
+}
+.home  .home-item
+{
+    position:absolute ;
+    width: 50% ;
+    right:10% ;
+    top: 40% ;
+    /* border: 2px solid #f00; */
+}
+.home  .home-item  h2
+{
+    color:#fff;
+    font-size: 50px ;
+}
+.home  .home-item  p
+{
+    color:#fff;
+    font-size: 20px ;
+}
+/* **************************************** about section *************************************  */
+/* -------------------- about info : right part -------------------- */
+.about__item  h2
+{
+    margin-bottom: 40px ;
+}
+.about__item  button
+{
+    margin-top: 30px ;
+    margin-bottom: 20px ; 
+}
+@media(max-width:768px)
+{
+    .home
+    {
+        width: 100% ;
+        height: 400px ;
+    }
+    .home  .home-item
+    {
+        width: 60% ;
+    }
+    .home .home-item  h2
+    {
+        font-size: 34px ;
+    }
+    .home .home-item  p
+    {
+        font-size: 18px ;
+    }
+}
+/* *********************************************** news section *********************************************** */
+.news
+{
+    background-color: lightgray ;
+}
+.news  .news_left
+{
+    display: flex ;
+    align-items: center ;
+}
+.news   .section_title
+{
+    margin: 0 ;
+    margin-bottom: 10px ;
+}
+.news  .news_left  img
+{
+    max-width: 200px; 
+    margin-left: 10px ;
+    margin-top: 10px ;
+}
+.card   .card-body
+{
+    padding: 10px ;
+}
+@media(min-width:0px) and (max-width:676px)
+{
+    .news   .section_title
+    {
+        margin: 20px  0px ;
+    }
+}
+/* *********************************************** Why choose us section ********************************************** */
+.choose
+{
+    margin: 50px  0px ;
+    padding: 0 ;
+}
+.choose     .card
+{
+    border: 0px ; 
+    margin: 10px  0px ;
+}
+.whyChooseUsH2:after
+{
+    content:"";
+    display: block ;
+    width: 80px ;
+    height: 3px ;
+    background-color: #ffc527;
+    margin: 20px 0px ;
+}
+.card-body 
+{
+    margin: 0px ;
+    padding: 0 ;
+}
+@media(min-width:0px) and (max-width:767px)
+{
+    .card-body 
+    {
+        margin:  10px 0px ;
+        padding: 20px 10px ;
+    }   
+}
+/* *********************************************** our features section ********************************************** */
+.features
+{
+    margin: 0px  0px ;
+    padding: 0 ;
+    border: 0 ;
+}
+.features   .card
+{
+    border: 0 ;
+    margin: 20px 0px ;
+}
+.features   .card   .card-icon
+{
+    width: 80px ;
+    height: 80px ;
+    border-radius: 50% ;
+    line-height: 80px ;
+    font-size: 40px;
+    background-color: #ffc527;
+    color: #fff;
+    text-align: center ;
+    padding: 0 ;
+    margin:  0 ;
+}
+.features   .card   .card-body
+{
+    margin: 0px ;
+}
+/* ********************************************** who we are section ********************************************** */
+.whoWeAre
+{
+	position: relative ;
+	width: 100% ;
+	height: 600px ;
+	overflow: hidden ;
+	background-image: url("../images/who-we-are-bg.jpg");
+	background-repeat: no-repeat ;
+	background-size: cover ;
+	background-position: center ;
+/*	border: 2px solid #00f ;	*/
+}
+/* ------------------------------ <h6></h6> ------------------------------ */
+.whoWeAre  	.whoWeAreH6
+{
+	font-size: 45px ;
+	margin: 0 ;
+	color: #fff ;
+	text-transform: uppercase ;
+	text-align: center ;
+	text-shadow: 2px 2px 2px #222 ;
+	padding-top: 50px;
+}
+/* *********************** video icon *********************** */
+.whoWeAre .videoIcon
+{
+/*	border: 2px solid  #f00 ;	*/
+	margin-top: 160px ;
+}
+.whoWeAre .videoIcon	.videoIconContainer
+{
+	display: block ;
+	margin: 0px auto ;
+	width: 120px ;
+	height: 120px ;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 50% ;
+	cursor: pointer ;
+	text-align: center ;
+/*	border: 2px solid #00f ;	*/
+}
+/* *********************** video icon : <i></i> ***********************  */
+.whoWeAre 	.videoIcon	.videoIconContainer   i
+{
+	font-size: 60px ;
+	padding: 30px 10px  ;
+	font-weight: bold;
+	color: rgb(255,197,39);
+}
+/* *********************** video file  ***********************  */
+.whoWeAre   .video3	 
+{
+	position: absolute ;
+	top: 50% ;
+	left: 50% ;
+	transform: translate(-50%,-50%);
+	height: auto ;
+	overflow: hidden ;
+/*	border: 2px solid #ff0 ;	*/
+	text-align: center ;
+	margin-top: 50px ;
+	display: none ;
+}
+.whoWeAre   .video3 	video 	  
+{
+	width: 100% ;
+	height: auto;
+}
+@media(min-width:0px) and (max-width:900px)
+{
+	.whoWeAre   .video3	 
+	{
+		width: 90% ;
+	}
+}
+/* ****************************************** who we are section ******************************************** */
+.testimonials
+{
+    width: 100% ;
+    height: auto ;
+    overflow: hidden ;
+/*    border: 2px solid #00f ;    */
+}
+.testimonials   .testimonialsH3
+{
+    font-size: 45px ;
+    margin-bottom: 30px ;
+}
+/* line under header */
+.testimonials   .testimonialsH3:after
+{
+    content: "";
+    display: block ;
+    width: 70px ;
+    height: 5px ;
+    background-color: #ffc527;
+    margin-top: 5px ;
+}
+/* ########### card  ########### */
+.testimonials     .card
+{
+    border: 0 ;
+}
+.testimonials     .card     .card-img
+{
+    border-radius: 50% ;
+    margin-top: 10px ;
+}
+.testimonials     .card     .card-img   img
+{
+    width: 100% ;
+    border-radius: 50% ; 
+}
+.testimonials     .card    .card-body   .card-title
+{
+    font-size: 18px ;
+}
+@media(min-width:0px) and (max-width:800px)
+{
+    .testimonials     .card     .card-img
+    {
+        width: 200px ;
+        height: 200px;
+    }
+}
+/* *************************************** subscribe section ******************************************* */
+.subscribe
+{
+    width: 100% ;
+    height: 500px ;
+    overflow: hidden ;
+    position: relative ;
+    background-image: url("../images/subscribe-our-newsletter-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center ;
+/*    border: 2px solid #f0f ;    */
+}
+.subscribe     .subscribe-item 
+{
+    width:50% ;
+    position: absolute ;
+    left: 50% ;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff ;
+/*    border: 2px solid #00f ;    */
+}
+.subscribe     .subscribe-item      h2
+{
+    font-size: 40px ;
+}
+.subscribe     .subscribe-item      p
+{
+    margin: 20px  0 ;
+    line-height: 1.8 ;
+    text-align: center ;
+}
+.subscribe   .subscribe-item   .subscribe-form
+{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center ;
+}
+.subscribe   .subscribe-item   .subscribe-form  input
+{
+    width: 80%;
+}
+.subscribe   .subscribe-item   .subscribe-form  button
+{
+    width: 18% ;
+}
+@media(min-width:0px) and (max-width:768px)
+{
+    .subscribe     .subscribe-item 
+    {
+        width: 90%;
+    }
+    
+    .subscribe   .subscribe-item   .subscribe-form
+    {
+        flex-direction: column ;
+    }
+    .subscribe   .subscribe-item   .subscribe-form  input   ,
+    .subscribe   .subscribe-item   .subscribe-form  button
+    {
+        width: 100% ;
+        margin-bottom: 10px ;
+    }
+}
+/* *************************************** latestNews section ******************************************* */
+.latestNews
+{
+    width: 100% ;
+    height: auto ;
+    overflow: hidden ;
+/*    border: 2px solid #f0f ; */
+}      
+.latestNews     .latestNewsH3
+{
+    font-size: 45px ;
+    margin-bottom: 30px ;
+}
+/* line under header */
+.latestNews     .latestNewsH3:after
+{
+   content:"";
+    display: block ;
+    width: 80px ;
+    height: 5px ;
+    background-color: #ffc527;
+    margin: 20px 0px ;
+
+}
+
+/* *************************************** footer section ******************************************* */
+.footer
+{
+    background-color: #071c33 ;
+}
+/* -------------- item1 ------------------ */
+.footer     .footer-item
+{
+/*    border: 2px solid #f00 ;    */
+    color: #fff ;
+}
+.footer     .footer-item    img
+{
+    background-color: #fff ;
+    padding: 10px 20px ;
+}
+.footer     .footer-item    p
+{
+    margin: 10px  0px ;
+}
+.footer     .footer-item    .contact-info
+{
+    display: block ;
+    color: rgb(93,109,126);
+    margin: 10px  0px ;
+}
+/* ///////////// item 2 ///////////// */
+.footer     .footer-item   h5
+{
+    margin-bottom: 20px ;
+}
+.footer     .footer-item    li
+{
+    margin: 10px 0px ;
+}
+.footer     .footer-item    li      a   
+{
+    color: #ffc527 ;
+}
+.footer     .footer-item    li      a       i
+{
+    font-size: 20px ;
+    margin-left: 10px ;
+}
+/* ///////////// item 3 ///////////// */
+.footer    .footer_title
+{
+/*    border: 2px solid #00f ;*/
+    color: #fff ;
+    margin-bottom: 20px  ;
+}
+.footer  .footer_container
+{
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+    padding-bottom: 10px ; 
+}
+/* item3 info */
+.footer  .footer_container  .footer-left
+{
+    width: 75% ;
+}
+/* item3 info : h5 */
+.footer  .footer_container  .footer-left    h5
+{
+    color: #ffc527 ;
+    font-size: 16px ;
+    margin: 0 ;
+}
+/* item3 info : p */
+.footer  .footer_container  .footer-left    p
+{
+    color: #fff ;
+    font-size: 14px ;
+    margin: 10px  0 ;
+}
+/* item3 image : image container */
+.footer  .footer_container  .footer-right
+{
+    width: 20%;
+}
+/* item3 image : <img> */
+.footer  .footer_container  .footer-right   img
+{
+    width: 100% ;
+    margin: 0 ;
+    padding: 0 ;
+}
+/* ****************************************** item 4 ****************************************** */
+/* ***************** item 4 : sub_box 1 ***************** */
+.footer-item    .footer-right   .footerRightPara
+{
+    font-size: 14px ; 
+    line-height: 1.8 ;
+    color: rgb(93,109,126);
+}
+.footer-item    .writeEmail   
+{
+    height: auto ;
+    overflow: hidden; 
+    background-color: #fff ;
+    border-radius: 30px ;
+    padding: 8px  ;
+}                
+/* ########### fourth <li></li> : <div class="emailFieldContainer"> <input type="email"></div> ######################## */
+.footer-item    .writeEmail   .emailFieldClass
+{
+	width:70% ;
+	float: right;
+/*	border: 2px solid #f0f ;	*/
+	border-radius: 20px ;
+	padding: 12px 15px ;
+	border: 0 ;
+	outline: 0 ;
+	font-size: 14px ;
+}
+/* ################### fourth <li></li> : <div class="emailFieldContainer"> <input type="email"></div> ################# */
+.footer-item    .writeEmail   .emailFieldClass::-webkit-input-placeholder
+{
+	font-size: 14px ;
+}
+/* ############## fourth <li></li> : <div class="emailFieldContainer"> <input type="button"></div> ###################### */
+.footer-item    .writeEmail   	.submitFieldClass
+{
+	width: 30% ;
+	float: left;
+	border-radius: 20px ;
+	padding: 15px  ;
+	border: 0 ;
+	outline: 0 ;
+	cursor: pointer ;
+	color: #fff ;
+	text-transform: capitalize ;
+	font-size: 14px;
+    background-color: #ffc527 ;
+}
+.footer-item    .writeEmail   .emailFieldClass	.submitFieldClass	input
+{
+	width: 100% ;
+	margin: 0 ;
+}
+
+/* ***************** left part : box image ***************** */
+.footer  .footerContainer	.footerUl 	.box  .footerBoxImgInfoContainer	.footerBoxImg
+{
+	width: 20% ;
+	float: left ;
+/*	border: 2px solid #00f ; */
+}
+/* ***************** right part : box info ***************** */
+.footer  .footerContainer	.footerUl 	.box  .footerBoxImgInfoContainer	.footerBoxInfo
+{
+	width: 80% ;
+	float: left ;
+/*	border: 2px solid #00f ; */
+}
+/* ***************** right part : box info : <h6></h6>  ***************** */
+.footer  .footerContainer	.footerUl 	.box  .footerBoxImgInfoContainer	.footerBoxInfo	.footerBoxInfoH6
+{ 
+	margin-top: 0px ;
+	margin-bottom: 8px ;
+	font-size: 17px ;
+	color: rgb(255,197,39); 
+	text-transform: capitalize ;
+	margin-left: 8px ;
+}
+/* ***************** right part : box info : <span></span>  ***************** */
+.footer  .footerContainer	.footerUl 	.box  .footerBoxImgInfoContainer	.footerBoxInfo	.footerBoxInfoSpan
+{   
+	display: block ;
+	font-size: 14px ;
+	color: rgb(74,108,128);
+	margin-top: 0px ;
+	margin-bottom: 10px ;
+	margin-left: 10px ;
+}
+/* #################################### fourth <li></li> : <h5></h5> #################################### */
+.footer  .footerContainer	.footerUl 	.box 	.box4H5
+{
+	margin-left: 15px ;
+	margin-bottom: 28px ;
+}
+/* ################################# fourth <li></li> : <p></p> ################################# */
+.footerBoxPara
+{
+	font-size: 12px ;
+	color: rgb(93,109,124);
+	text-transform: capitalize ;
+	line-height: 1.8 ;
+	margin-left: 15px ;
+	margin-bottom: 20px ;
+}
+/* ######################### fourth <li></li> : <div class="emailFieldContainer"></div> ################################# */
+.emailFieldContainer
+{
+	width: 100% ;
+	height: auto ;
+	overflow: hidden; 
+	margin-left: 5% ; 
+/*	border: 2px solid #0f0 ;	*/
+	border-radius: 30px ;
+	background-color: #fff ;
+}
+/* ################# fourth <li></li> : <div class="emailFieldContainer"> <input type="email"></div> ################### */
+.emailFieldClass
+{
+	width: 60% ;
+	float: right;
+/*	border: 2px solid #f0f ;	*/
+	border-radius: 20px ;
+	padding: 12px 15px ;
+	border: 0 ;
+	outline: 0 ;
+	font-size: 18px ;
+}
+/* ################# fourth <li></li> : <div class="emailFieldContainer"> <input type="email"></div> #################### */
+.emailFieldClass::-webkit-input-placeholder
+{
+	font-size: 13px ;
+}
+/* ################# fourth <li></li> : <div class="emailFieldContainer"> <input type="button"></div> ################### */
+.submitFieldClass
+{
+	width: 40% ;
+	float: left ;
+	border-radius: 20px ;
+	padding: 15px 0px ;
+	border: 0 ;
+	outline: 0 ;
+	background-color: rgb(255,197,39); 
+	cursor: pointer ;
+	color: #fff ;
+	text-transform: capitalize ;
+	font-size: 14px;
+}
+.submitFieldClass	input
+{
+	width: 100% ;
+	margin: 0 ;
+}
+.footerSocialIconsContainer
+{
+/*	border: 2px solid #f00 ;	*/
+	margin-left:20px ;
+	margin-top: 50px ;
+}
+.footerSocialIconsContainer	   a
+{
+	margin: 10px ;
+	color: rgb(202,202,202) ;
+}
+.footerSocialIconsContainer	   a        i
+{
+    font-size: 16px ;
+}
+
+/* ////////////////////////////////////////////// junbotron ////////////////////////////////////////////// */
+.jumbotron
+{
+    padding: 20px  0px ;
+}
+.breadcrumb
+{
+    justify-content: flex-end ;
+}        
+/* ////////////////////////////////////////////////// blog section ////////////////////////////////////// */
+/* #################################### row 1 : right column #################################### */ 
+.blog   
+{
+/*    border: 2px solid #f00 ;*/
+}
+.blog     .blogH5
+{
+    text-align:  center ;
+    margin-bottom: 20px ; 
+}
+.blog   .jumbotron
+{
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+    padding: 20px ;
+    border-radius: 0 ;
+    border-bottom: 3px solid #ffc527 ;
+}
+.blog   .jumbotron  .blog-desc  
+{
+    width: 55%  ;
+}
+.blog   .jumbotron  .blog-desc  h4
+{
+    font-size: 21px ;
+    font-weight: bold ;
+    margin-bottom: 18px  ; 
+}
+.blog   .jumbotron  .blog-desc  p
+{
+    margin: 15px 0 ;
+    line-height: 1.8 ;
+}
+.blog   .jumbotron  .blog-img
+{     
+    width: 40% ;
+    height: 250px ;
+}
+.blog   .jumbotron  .blog-img   img
+{
+    width: 100% ;
+    height: 100% ;
+}
+/* #################################### row 1 : left column #################################### */ 
+.search 
+{
+    margin-top: 45px ;
+}
+/* search : inputField  */
+.search     input
+{
+    padding: 22px  10px ; /
+    border-radius: 0  ;
+    outline:  0 ; 
+    box-shadow: none ;
+    border: 1px solid #ccc ;
+}
+/*  search : button */
+.search   .input-group-prepend  span
+{
+    background-color: #fff ;
+    padding: 10px 20px ; 
+    cursor: pointer ;
+}
+.search   .input-group-prepend      span     i
+{
+    color: #ffc527 ;
+}
+/* #################################### row 2 : left column #################################### */ 
+/* /////////////////// latestNews : left column /////////////////// */
+/*
+.latestNews  
+{
+    border: 2px solid #f0f ;
+    padding: 10px ;
+    margin: 50px 0px ;
+}
+.latestNews     h3
+{
+    font-size: 20px ;
+    padding: 10px   ;
+}
+.latestNews     .latestNews  .latestNewsUl      .latestNewsUlLi
+{
+    margin-bottom: 0px ;
+    padding: 2px ;
+}
+.latestNews     .latestNewsUl  .latestNewsUlLi  span
+{
+    margin: 10px 0px ;
+    border: 2px solid #f00 ; 
+}
+.latestNews     .latestNewsUl  .latestNewsUlLi   i
+{
+    margin-left: 5px ;
+    font-size: 20px ;
+}
+.latestNews     .latestNewsUl  .latestNewsUlLi  span.latestNewsDate
+{
+    display: block ;
+    margin-right: 15px ;
+    color: #ddd ;
+}
+*/
